@@ -4,36 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2 task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>Welbex</title>
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <div class="bg purple_ball"></div>
+    <div class="bg red_ball"></div>
+    <div class="bg red_ball_2"></div> 
+    <div class="bg purple_light"></div>
+    <div class="bg red_light"></div>
     <header class="header">
 
       <div class="container">
+
+       <div class="header_wrap">
+
         <div class="logo_wrap">
-          <img src="./img/logo_welbex.png" alt="logo-welbex" class="logo">
-          <p class="logo_text">крупный интегратор CRM в Росcии и ещё 8 странах</p>
+          <img src="./img/icons/logo_welbex.svg" alt="logo-welbex" class="logo">
+          <p class="logo_text">крупный интегратор CRM <br> в Росcии и ещё 8 странах</p>
         </div>
 
         <nav>
-          <ul>
-            <li>Услуги</li>
-            <li>Виджеты</li>
-            <li>Интеграции</li>
-            <li>Кейсы</li>
-            <li>Сертификаты</li>
+          <ul class="nav_ul">
+            <li><a href="#" class="nav_link">Услуги</a></li>
+            <li><a href="#" class="nav_link">Виджеты</a></li>
+            <li><a href="#" class="nav_link">Интеграции</a></li>
+            <li><a href="#" class="nav_link">Кейсы</a></li>
+            <li><a href="#" class="nav_link">Сертификаты</a></li> 
           </ul>
         </nav>
 
         <div class="contacts">
-          <p class="tel">+7 555 555-55-55</p>
+          <a href="tel:+7 555 555-55-55" class="tel">+7 555 555-55-55</a>
           <div class="contacts_icons">
             <a href="#"><img src="./img/icons/telegram.svg" alt="telegram"></a>
-            <a href="#"><img src="./img/icons/phone.svg" alt="telegram"></a>
-            <a href="#"><img src="./img/icons/whatsapp.svg" alt="telegram"></a>
+            <a href="#"><img src="./img/icons/phone.svg" alt="phone"></a>
+            <a href="#"><img src="./img/icons/whatsapp.svg" alt="whatsapp"></a>
           </div>
         </div>
+
+       </div>
+
       </div>
 
     </header>
@@ -41,44 +55,51 @@
     <main>
 
       <div class="container">
-        <div class="main_heading">
-          <h1 class="heading_title">Зарабатывайте больше <span>с WELBEX</span></h1>
-          <p class="heading_desc">Развиваем и контролируем продажи за вас</p>
-        </div>
 
-        <div class="main_box">
-          <h2 class="main_title">Вместе с бесплатной консультацией мы дарим:</h2>
-
-          <div class="box_items"> 
-            <div class="box_item">
-              <h3 class="box_title">Виджеты</h3>
-              <p class="box_desc">30 готовыхрешений</p>
-            </div>
-
-            <div class="box_item">
-              <h3 class="box_title">Dashboard</h3>
-              <p class="box_desc">с показателями вашего бизнеса</p>
-            </div>
-
-            <div class="box_item">
-              <h3 class="box_title">Skype Аудит</h3>
-              <p class="box_desc">отдела продаж и CRM системы</p>
-            </div>
-            
-            <div class="box_item">
-              <h3 class="box_title">35 дней</h3>
-              <p class="box_desc">использования CRM</p>
-            </div> 
+        <div class="main_wrap">
+          <div class="main_heading">
+            <h1 class="heading_title">Зарабатывайте <br> больше <br> <span id="welbex_width">с WELBEX</span></h1>
+            <p class="heading_desc">Развиваем и контролируем <br> продажи за вас</p>
           </div>
 
-          <button>Получить консультацию</button>
+          <div class="main_box">
+            <h2 class="main_title">Вместе с <span id="free_cons">бесплатной <br> консультацией</span> мы дарим:</h2>
+
+            <div class="box_items"> 
+              <div class="box_item">
+                <h3 class="box_title">Виджеты</h3>
+                <p class="box_desc">30 готовых решений</p>
+              </div>
+
+              <div class="box_item">
+                <h3 class="box_title">Dashboard</h3>
+                <p class="box_desc">с показателями вашего бизнеса</p>
+              </div>
+
+              <div class="box_item">
+                <h3 class="box_title">Skype Аудит</h3>
+                <p class="box_desc">отдела продаж и CRM системы</p>
+              </div>
+              
+              <div class="box_item">
+                <h3 class="box_title">35 дней</h3>
+                <p class="box_desc">использования CRM</p>
+              </div> 
+            </div>
+
+            <a href="#" class="btn">Получить консультацию</a>
+          </div>
+        
         </div>
+         
       </div>
     </main>
   
     <footer>
-      <div class="footer_box">
-          <h3>О компании</h3>
+      <div class="container">
+       <div class="footer_wrap">
+        <div class="footer_box">
+          <h3 class="footer_title">О компании</h3>
           <ul>
             <li><a href="#">Партнёрская программа</a></li>
             <li><a href="#">Вакансии</a></li> 
@@ -86,50 +107,46 @@
       </div>
 
       <div class="footer_box">
-        <h3>Меню</h3>
-        <ul>
-          <li><a href="#">Расчёт стоимости</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Виджеты</a></li>
-          <li><a href="#">Интеграции</a></li>
-          <li><a href="#">аши клиенты</a></li> 
-        </ul>
-      </div>
+        <h3 class="footer_title">Меню</h3>
+        <div class="menu_ul">
+          <ul>
+            <li><a href="#">Расчёт стоимости</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Виджеты</a></li>
+            <li><a href="#">Интеграции</a></li>
+            <li><a href="#">Наши клиенты</a></li> 
+          </ul>
+          <ul>
+            <li><a href="#">Кейсы</a></li>
+            <li><a href="#">Благодарственные письма</a></li>
+            <li><a href="#">Сертификаты</a></li>
+            <li><a href="#">Блог на Youtube</a></li>
+            <li><a href="#">Вопрос / Ответ</a></li>
+          </ul>
+        </div>
+      </div> 
 
-      <div class="footer_box">
+      <div class="footer_box footer_contact">
+        <h3 class="footer_title">Контакты</h3>
         <ul>
-          <li><a href="#">Кейсы</a></li>
-          <li><a href="#">Благодарственные письма</a></li>
-          <li><a href="#">Сертификаты</a></li>
-          <li><a href="#">Блог на Youtube</a></li>
-          <li><a href="#">Вопрос / Ответ</a></li>
-        </ul>
-      </div>
-
-      <div class="footer_box">
-        <h3>Контакты</h3>
-        <ul>
-          <li><a href="#">+7 555 555-55-55</a></li>
+          <li><a href="tel:+7 555 555-55-55" class="tel">+7 555 555-55-55</a></li>
           <li>
-            <ul>
-              <li>              
-                <a href="#"><img src="./img/icons/telegram.svg" alt="telegram"></a>
-              </li>
-              <li>
-                <a href="#"><img src="./img/icons/phone.svg" alt="telegram"></a>
-              </li>
-              <li>
-                <a href="#"><img src="./img/icons/whatsapp.svg" alt="telegram"></a>
-              </li> 
-            </ul>
+            <div class="footer_icons">
+              <a href="#"><img src="./img/icons/telegram.svg" alt="telegram"></a>
+              <a href="#"><img src="./img/icons/phone.svg" alt="phone"></a>
+              <a href="#"><img src="./img/icons/whatsapp.svg" alt="whatsapp"></a>
+            </div>
           </li>
           <li><a href="#">Москва, Путевой проезд 3с1, к 902</a></li>
         </ul>
       </div>
 
-      <div class="coopyright">
-        <p>©WELBEX 2022. Все права защищены.</p>
-        <a>Политика конфиденциальности</a>
+      
+       </div>
+        <div class="coopyright">
+          <p class="coopyright_text">©WELBEX 2022. Все права защищены.</p>
+          <a href="#" class="coopyright_link">Политика конфиденциальности</a>
+        </div>
       </div>
     </footer> 
 
